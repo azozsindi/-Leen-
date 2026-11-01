@@ -28,7 +28,11 @@ export const HowWeWork: React.FC<HowWeWorkProps> = ({ currentLang }) => {
   };
 
   return (
-    <section id="how-we-work" className="py-16 sm:py-24 md:py-28 bg-slate-50/70 dark:bg-slate-950 border-y border-slate-200/60 dark:border-slate-800 transition-colors duration-200">
+    <section
+      id="how-we-work"
+      dir={isRtl ? 'rtl' : 'ltr'}
+      className="py-16 sm:py-24 md:py-28 bg-slate-50/70 dark:bg-slate-950 border-y border-slate-200/60 dark:border-slate-800 transition-colors duration-200"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
@@ -48,13 +52,15 @@ export const HowWeWork: React.FC<HowWeWorkProps> = ({ currentLang }) => {
         {/* 4 Phases Flow Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {howWeWorkPhases.map((phase) => {
+            const title = isRtl ? phase.titleAr : phase.titleEn;
             const scopeItems = isRtl ? phase.scopeItemsAr : phase.scopeItemsEn;
             const hasItems = scopeItems && scopeItems.length > 0;
+            const phaseLabel = isRtl ? `المرحلة ${phase.number}` : `PHASE ${phase.number}`;
 
             return (
               <div
                 key={phase.id}
-                className="relative rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 p-5 sm:p-6 flex flex-col justify-between shadow-2xs hover:shadow-xs transition-shadow duration-200"
+                className="relative rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 p-5 sm:p-6 flex flex-col justify-between shadow-2xs hover:shadow-xs transition-shadow duration-200 h-full"
               >
                 {/* Phase Number & Indicator */}
                 <div>
@@ -67,9 +73,9 @@ export const HowWeWork: React.FC<HowWeWorkProps> = ({ currentLang }) => {
                     </div>
                   </div>
 
-                  {/* Title */}
+                  {/* Title (Language-dependent, pure Arabic or pure English) */}
                   <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-3 sm:mb-4 pb-3 border-b border-slate-100 dark:border-slate-800 tracking-tight">
-                    {phase.titleEn}
+                    {title}
                   </h3>
 
                   {/* Specific Bullet Items */}
@@ -86,7 +92,7 @@ export const HowWeWork: React.FC<HowWeWorkProps> = ({ currentLang }) => {
                       ))}
                     </ul>
                   ) : (
-                    <div className="py-6 flex flex-col items-center justify-center text-center">
+                    <div className="py-8 flex flex-col items-center justify-center text-center">
                       <div className="w-12 h-12 rounded-full bg-[#073B82]/5 dark:bg-[#009AE0]/15 flex items-center justify-center text-[#073B82] dark:text-[#38bdf8] mb-3">
                         <Workflow className="w-6 h-6 text-[#073B82] dark:text-[#38bdf8]" />
                       </div>
@@ -99,7 +105,7 @@ export const HowWeWork: React.FC<HowWeWorkProps> = ({ currentLang }) => {
 
                 {/* Card Base Marker */}
                 <div className="pt-5 mt-5 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-400 dark:text-slate-500 font-mono">
-                  <span>PHASE {phase.number}</span>
+                  <span>{phaseLabel}</span>
                   <span className="text-[#009AE0] dark:text-[#38bdf8] font-sans font-semibold">
                     {isRtl ? 'معايير مؤسسية' : 'Standard'}
                   </span>

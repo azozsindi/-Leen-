@@ -90,61 +90,61 @@ export const howWeWorkPhases: HowWeWorkPhase[] = [
     id: 'medical-devices',
     number: '01',
     titleEn: 'Medical Device Manufacturing',
-    titleAr: 'Medical Device Manufacturing',
+    titleAr: 'التصنيع الطبي',
     scopeItemsEn: [
       'Device Design',
-      'R&D',
-      'Pharma Production',
+      'Research & Development (R&D)',
+      'Pharmaceutical Production',
       'Quality Assurance',
       'Compliance'
     ],
     scopeItemsAr: [
-      'تصميم الأجهزة (Device Design)',
-      'البحث والتطوير (R&D)',
-      'الإنتاج الدوائي (Pharma Production)',
-      'ضمان الجودة (Quality Assurance)',
-      'الامتثال والاشتراطات (Compliance)'
+      'تصميم الأجهزة',
+      'البحث والتطوير',
+      'الإنتاج الدوائي',
+      'ضمان الجودة',
+      'الامتثال والاشتراطات'
     ]
   },
   {
     id: 'operations-maintenance',
     number: '02',
-    titleEn: 'Operations Maintenance',
-    titleAr: 'Operations Maintenance',
+    titleEn: 'Operations & Maintenance',
+    titleAr: 'التشغيل والصيانة',
     scopeItemsEn: [
       'Facility Management',
       'Project Management',
-      'Distribution',
+      'Distribution & Logistics',
       'Biomedical Equipment',
       'Inventory Management',
-      'Sales',
+      'Sales & Supply',
       'Equipment Maintenance',
-      'Calibration',
+      'Precision Calibration',
       'Regulatory Compliance',
       'Preventive Maintenance',
       'Emergency Repairs',
       'Retrofitting'
     ],
     scopeItemsAr: [
-      'إدارة المرافق (Facility Management)',
-      'إدارة المشاريع (Project Management)',
-      'التوزيع واللوجستيات (Distribution)',
-      'الأجهزة الطبية الحيوية (Biomedical Equipment)',
-      'إدارة المخزون (Inventory Management)',
-      'المبيعات والتوريد (Sales)',
-      'صيانة المعدات (Equipment Maintenance)',
-      'المعايرة الدقيقة (Calibration)',
-      'الامتثال التنظيمي (Regulatory Compliance)',
-      'الصيانة الوقائية (Preventive Maintenance)',
-      'الإصلاحات الطارئة (Emergency Repairs)',
-      'التحديث والتأهيل (Retrofitting)'
+      'إدارة المرافق',
+      'إدارة المشاريع',
+      'التوزيع والخدمات اللوجستية',
+      'الأجهزة الطبية الحيوية',
+      'إدارة المخزون',
+      'المبيعات والتوريد',
+      'صيانة المعدات',
+      'المعايرة الدقيقة',
+      'الامتثال التنظيمي',
+      'الصيانة الوقائية',
+      'الإصلاحات الطارئة',
+      'التحديث وإعادة التأهيل'
     ]
   },
   {
     id: 'general-contracting-phase',
     number: '03',
     titleEn: 'General Contracting',
-    titleAr: 'General Contracting',
+    titleAr: 'المقاولات العامة',
     scopeItemsEn: [
       'Construction',
       'Engineering',
@@ -153,18 +153,18 @@ export const howWeWorkPhases: HowWeWorkPhase[] = [
       'IFC'
     ],
     scopeItemsAr: [
-      'الإنشاء والبناء (Construction)',
-      'الأعمال الهندسية (Engineering)',
-      'الترميم والتجديد (Renovation)',
-      'اللوجستيات وسلاسل الإمداد (Logistics)',
-      'المخططات التنفيذية المعتمدة (IFC)'
+      'الإنشاء والبناء',
+      'الأعمال الهندسية',
+      'الترميم والتجديد',
+      'اللوجستيات وسلاسل الإمداد',
+      'المخططات التنفيذية المعتمدة'
     ]
   },
   {
     id: 'operations-phase',
     number: '04',
     titleEn: 'Operations',
-    titleAr: 'Operations',
+    titleAr: 'العمليات والتشغيل',
     scopeItemsEn: [],
     scopeItemsAr: []
   }
