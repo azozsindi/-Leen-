@@ -1,0 +1,6 @@
+{
+  "name": "شركة لين الحلول | Leen Alhulul",
+  "description": "الموقع الرسمي لشركة لين الحلول - حلول متكاملة في المقاولات والتشطيبات وأنظمة الاتصالات والحلول الأمنية والتشغيل والصيانة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

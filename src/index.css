@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-arabic: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-latin: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-arabic);
+  }
+
+  html[dir="ltr"] {
+    font-family: var(--font-latin);
+  }
+}
+
+/* Custom styling for luxury corporate aesthetic */
+.brand-dark-blue {
+  color: #073B82;
+}
+
+.bg-brand-dark-blue {
+  background-color: #073B82;
+}
+
+.brand-sky-blue {
+  color: #009AE0;
+}
+
+.bg-brand-sky-blue {
+  background-color: #009AE0;
+}
+
+/* Subtle grid backdrop for corporate engineering texture */
+.engineering-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(7, 59, 130, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(7, 59, 130, 0.04) 1px, transparent 1px);
+}
+
+.dark-engineering-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Prevent touch delay and accidental horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+  touch-action: manipulation;
+}
